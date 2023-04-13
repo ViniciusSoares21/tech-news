@@ -22,14 +22,13 @@ def fetch(url):
 
 # Requisito 2
 def scrape_updates(html_content):
-    soup = BeautifulSoup(html_content, 'html.parser')
+    soup = BeautifulSoup(html_content, "html.parser")
 
     links = soup.find_all("a", {"class": "cs-overlay-link"})
     href = []
     for link in links:
-        href.append(link.get('href'))
+        href.append(link.get("href"))
     return href
-
 
 
 # Requisito 3
