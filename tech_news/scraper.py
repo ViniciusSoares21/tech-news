@@ -45,7 +45,23 @@ def scrape_next_page_link(html_content):
 
 # Requisito 4
 def scrape_news(html_content):
-    """Seu código deve vir aqui"""
+    soup = BeautifulSoup(html_content, "html.parser")
+    news = {}
+    news["url"] = soup.find(
+        "link",
+        {"rel": "canonical"},
+    )["href"]
+    news["title"] = soup.find("h1", {"class": "entry-title"}).string.strip()
+    news["timestamp"] = soup.find("li", {"class": "meta-date"}).string
+    news["writer"] = soup.find("li", {"class": "meta-author"}).a.string
+    news["reading_time"] = int(
+        soup.find("li", {"class": "meta-reading-time"}).text.split()[0]
+    )
+    news["summary"] = soup.find(
+        "div", {"class": "entry-content"}
+    ).p.text.strip()
+    news["category"] = soup.find("span", {"class": "label"}).string
+    return news
 
 
 # Requisito 5
