@@ -29,4 +29,9 @@ def search_by_date(date):
 
 # Requisito 9
 def search_by_category(category):
-    """Seu código deve vir aqui"""
+    result = get_collection().find(
+        {"category": re.compile(category, re.IGNORECASE)},
+        {"_id": False, "title": True, "url": True},
+    )
+
+    return [(item["title"], item["url"]) for item in result]
