@@ -12,25 +12,25 @@ def fake_data_news():
             "url": "https://blog.betrybe.com/carreira/oratoria/",
             "title": "Oratória: passo a passo para falar bem e se destacar!",
             "writer": "Lucas Custódio",
-            "summary": "Sabemos que a arte de contar histórias surge de tempos imemoriais, com seres humanos carregando a habilidade de transmitir informações por meio da linguagem em sua essência. No entanto, o que podemos não saber é que a arte de usar a linguagem para construir discursos polidos e impactantes também não é de hoje. Tanto os diálogos do filósofo Platão quanto os discursos excepcionais de Cícero na Roma Antiga utilizavam uma técnica milenar para encantar audiências: a oratória.",
+            "summary": "Sabemos que a arte de contar histórias surge de tempo",
             "reading_time": 15,
             "timestamp": "08/07/2022",
             "category": "Carreira",
         },
         {
-            "url": "https://blog.betrybe.com/noticias/orkut-voltou-o-que-se-sabe-ate-agora-sobre-o-retorno/",
-            "title": "Orkut voltou: o que se sabe até agora sobre o retorno da rede",
+            "url": "https://blog.betrybe.com/noticias/",
+            "title": "Orkut volto: o que se sabe até agora sobre o retorno",
             "writer": "Allan Camilo",
-            "summary": "Em meados de abril deste ano, o domínio do Orkut foi reativado. O site, que para muitos brasileiros foi o primeiro contato com uma rede social, “retornou” 8 anos após ser desativado. Porém, seu sucessor espiritual ainda está para ser lançado. Entenda a seguir se o Orkut realmente voltou à ativa.",
+            "summary": "Em meados de abril deste ano, o domínio do Orkut foi",
             "reading_time": 10,
             "timestamp": "08/07/2022",
             "category": "Notícias",
         },
         {
             "url": "https://blog.betrybe.com/noticias/dungleon-como-jogar/",
-            "title": "Dungleon: como jogar o game que mistura RPG e Wordle [2022]",
+            "title": "Dungleon: como jogar o game que mistura RPG e Wordle",
             "writer": "Allan Camilo",
-            "summary": "Cópias e spin-offs de jogos populares não são novidade. Derivados dos aplicativos Temple Run e Flappy Bird já fazem parte da cultura pop. Com o boom repentino de Wordle, onde deve-se inserir letras e descobrir a palavra do dia, gêneros diferentes de jogos se misturaram à jogabilidade tradicional. É assim que surgiu Dungleon, game que mistura RPGs e Wordle. A seguir, saiba tudo sobre ele.",
+            "summary": "Cópias e spin-off de jogos populares não são novidade",
             "reading_time": 3,
             "timestamp": "07/07/2022",
             "category": "Notícias",
@@ -55,7 +55,7 @@ def test_reading_plan_group_news(fake_data_news):
                 "unfilled_time": 0,
                 "chosen_news": [
                     (
-                        "Orkut voltou: o que se sabe até agora sobre o retorno da rede",
+                        "Orkut volto: o que se sabe até agora sobre o retorno",
                         10,
                     )
                 ],
@@ -64,7 +64,7 @@ def test_reading_plan_group_news(fake_data_news):
                 "unfilled_time": 7,
                 "chosen_news": [
                     (
-                        "Dungleon: como jogar o game que mistura RPG e Wordle [2022]",
+                        "Dungleon: como jogar o game que mistura RPG e Wordle",
                         3,
                     )
                 ],
