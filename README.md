@@ -1,13 +1,25 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Tech news
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+## Descrição 
+Neste projeto, o objetivo principal é fazer consultas em notícias sobre tecnologia. As notícias serão obtidas por meio da raspagem do blog da Trybe. As principais habilidades trabalhadas incluem o uso do terminal interativo do Python, a escrita e importação de módulos personalizados, a aplicação de técnicas de raspagem de dados para extrair informações de conteúdo HTML e o armazenamento dos dados coletados em um banco de dados. Com essas etapas, o projeto permitirá realizar consultas e análises em notícias relevantes sobre tecnologia, obtidas através da raspagem do blog da Trybe.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## Tecnologias e Ferramentas
+
+- python.
+- BeautifulSoup.
+- requests.
+<details>
+  <summary><strong>🔍 Testes</strong></summary>
+  
+- pytest
+</details>
+<details>
+  <summary><strong>🕵️ Alinhamento de código</strong></summary>
+  
+- black
+- flake8.
+</details>
+
+ 
+## Criado por [Vinicius Soares](https://www.linkedin.com/in/vinicius-soares21/)
+    
